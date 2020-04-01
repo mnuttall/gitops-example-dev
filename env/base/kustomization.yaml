@@ -1,0 +1,5 @@
+---
+bases:
+  - ../../apps/app-1/overlays
+resources:
+  - 205-serviceaccount.yaml

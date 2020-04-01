@@ -1,0 +1,6 @@
+---
+bases: 
+  - ../base
+patches:
+  - dev-service.yaml
+  - dev-deployment.yaml

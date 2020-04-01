@@ -1,0 +1,4 @@
+---
+# Using bases here since kubectl 1.17.3 does not fully support modern kustomize syntax
+bases:
+  - ../base
