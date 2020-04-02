@@ -14,4 +14,4 @@ kustomize build apps/app-1
 kustomize build env
 ```
 
-or `kustomize apply -k` these paths
+or `kubectl apply -k` these paths
