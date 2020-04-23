@@ -7,8 +7,8 @@ spec:
   selector:
     app: demo
   ports:
-  - port: 2995
-    targetPort: 2995
+  - port: 3000
+    targetPort: 3000
 
 ---
 
@@ -29,7 +29,7 @@ spec:
     spec:
       containers:
       - name: demo
-        image: mnuttall/promote-demo:v1
+        image: $IMAGE
         imagePullPolicy: Always
         ports:
         - containerPort: 3000
