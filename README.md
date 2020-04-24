@@ -15,3 +15,24 @@ kustomize build env
 ```
 
 or `kubectl apply -k` these paths
+
+## `namespace` considerations
+
+The Kubernetes namespace that a repository in this format would be deployed in would typically be defined in a `namespace.yaml` file in `env/base/`.
+
+The recommended best practice for deploying an individual app or service into a different namespace would be to:
+
+1. Create the namespace.
+
+`kubectl create namespace my_namespace`
+
+2. Clone the GitOps repo.
+
+`git clone https://github.com/rhd-gitops-example/gitops-example-dev`
+
+3. Apply the app or service you want to your namespace.
+
+```
+kustomize build services/service-a | kubectl apply -n my_namespace -f -
+kustomize build apps/app-a | kubectl apply -n my_namespace -f -
+```
