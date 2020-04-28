@@ -7,8 +7,8 @@ spec:
   selector:
     app: demo
   ports:
-  - port: 30001
-    targetPort: 30001
+  - port: 3000
+    targetPort: 3000
 
 ---
 
