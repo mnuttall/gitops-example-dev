@@ -29,7 +29,7 @@ spec:
     spec:
       containers:
       - name: demo
-        image: mnuttall/promote-demo:c4b1438056fdabb09c2b8c307f3063c5cb56e259
+        image: $IMAGE
         imagePullPolicy: Always
         ports:
-        - containerPort: 3000
+        - containerPort: 30001
